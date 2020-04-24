@@ -1,0 +1,22 @@
+== Kubernetes Cloud Provider
+
+- AWS Elastic Kubernetes Service -  EKS - https://aws.amazon.com/pt/eks/
+- Azure Kubernetes Service - AKS - https://azure.microsoft.com/en-us/services/kubernetes-service/
+- Google Kubernetes Engine - GKE - https://cloud.google.com/kubernetes-engine
+- Tecent Kubernetes Services - https://intl.cloud.tencent.com/product/tke
+- Huawei Cloud Container Engine - https://www.huaweicloud.com/en-us/product/cce.html
+- Alibaba Container Service for Kubernetes - https://www.alibabacloud.com/product/kubernetes
+- IBM Cloud Kubernetes Service - https://www.ibm.com/cloud/container-service/
+
+== Terraform providers
+- https://www.terraform.io/docs/providers/aws/index.html
+- https://www.terraform.io/docs/providers/azurerm/index.html
+- https://www.terraform.io/docs/providers/google/index.html
+- https://www.terraform.io/docs/providers/tencentcloud/index.html
+- https://www.terraform.io/docs/providers/huaweicloud/index.html
+- https://www.terraform.io/docs/providers/alicloud/index.html
+- https://cloud.ibm.com/docs/terraform?topic=terraform-setup_cli&locale=pt-BR#setup_cli
+
+
+== Architecture
+- Well-architeded Framework - https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf

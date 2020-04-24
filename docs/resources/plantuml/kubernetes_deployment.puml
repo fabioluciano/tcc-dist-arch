@@ -1,0 +1,46 @@
+@startuml kubernetes_deployment
+
+title Diagrama de implantação dos componentes do Kubernetes
+
+skinparam defaultTextAlignment center
+skinparam dpi 300
+skinparam linetype polyline
+skinparam linetype ortho
+
+node "master-01" <<master>> as MasterNode01 {
+  [API Server] -[hidden]down- [Scheduler]
+  [Scheduler] -[hidden]down- [Controller Manager]
+}
+
+node "master-02" <<master>> as MasterNode02 {
+  [API Server] -[hidden]down- [Scheduler]
+  [Scheduler] -[hidden]down- [Controller Manager]
+}
+
+node "master-03" <<master>> as MasterNode03 {
+  [API Server] -[hidden]down- [Scheduler]
+  [Scheduler] -[hidden]down- [Controller Manager]
+}
+
+node "worker-01" <<worker>> as WorkerNode01 {
+  component "kubelet" as KubeletWorker01
+  component "kube-proxy" as KubeProxyWorker01
+  component "CRI" as CRIWorker01
+}
+
+node "worker-02" <<worker>> as WorkerNode02 {
+  component "kubelet" as KubeletWorker02
+  component "kube-proxy" as KubeProxyWorker02
+  component "CRI" as CRIWorker02
+}
+
+node "worker-03" <<worker>> as WorkerNode03 {
+  component "kubelet" as KubeletWorker03
+  component "kube-proxy" as KubeProxyWorker03
+  component "CRI" as CRIWorker03
+}
+
+MasterNode01 ..down.. WorkerNode01
+WorkerNode01 ..down.. WorkerNode02
+WorkerNode02 ..down.. WorkerNode03
+@enduml

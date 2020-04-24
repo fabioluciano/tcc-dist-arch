@@ -1,0 +1,15 @@
+== TODO
+
+padrão `de fato` para clusterização de aplicações conteinerizadas
+Portabilidade entre os cloud providers... 
+- Multi master cluster
+- Adicionar `Tekton` ou Jenkins X para build das aplicações no cluster;
+- OpenWhisk, OpenFaas, Kubeless, Knative
+- API kong
+- API Gateway x Service Mesh
+- `Kafka`
+- Stateless vs Statefull
+- https://www.conventionalcommits.org/en/v1.0.0/
+- AWS, GCP, Azure, IBM Cloud, Alibaba, Huawei, Oracle?, Tecent?
+- Implementar a mesma rede para todos os cloud providers testados
+- Well Architected Framework
